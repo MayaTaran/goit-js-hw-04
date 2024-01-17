@@ -2,8 +2,14 @@ function calcAverageCalories(days) {
        let totalSumm = 0;
     for (let everyday of days) {
         totalSumm += everyday.calories;
-    }
-    const averageCalories = totalSumm / days.length;
+  }
+  let averageCalories;
+  if (days != 0) {
+  averageCalories = totalSumm / days.length; 
+  }
+  else { averageCalories = 0 };
+  
+  
     return averageCalories;
 }
 
